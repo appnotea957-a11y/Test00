@@ -1,15 +1,16 @@
 {
-  "name": "reimuruabt-rebuild",
+  "name": "reimuru-app",
   "version": "1.0.0",
-  "description": "premium full-stack student AI app rebuilt for Railway deployment",
+  "description": "Reimuru student AI study app",
   "main": "server.js",
-  "scripts": {
-    "start": "node server.js"
-  },
   "engines": {
     "node": ">=18"
   },
+  "scripts": {
+    "start": "node server.js"
+  },
   "dependencies": {
+    "dotenv": "^16.4.5",
     "express": "^4.21.2",
     "multer": "^1.4.5-lts.1",
     "openai": "^4.104.0"
