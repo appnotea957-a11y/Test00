@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>History · ReimuruABT</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body data-page="history">
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div>
+        <a href="dashboard.html" class="brand-lockup">
+          <span class="brand-pill"></span>
+          <span class="brand-copy">
+            <strong>ReimuruABT</strong>
+            <span>Premium student AI</span>
+          </span>
+        </a>
+        <nav class="sidebar-nav"><a href="dashboard.html" class=""><span class="dot"></span>Dashboard</a>
+<a href="upload.html" class=""><span class="dot"></span>Upload</a>
+<a href="results.html" class=""><span class="dot"></span>Results</a>
+<a href="history.html" class="active"><span class="dot"></span>History</a>
+<a href="flashcards.html" class=""><span class="dot"></span>Flashcards</a>
+<a href="quiz.html" class=""><span class="dot"></span>Quiz</a>
+<a href="pricing.html" class=""><span class="dot"></span>Pricing</a>
+<a href="settings.html" class=""><span class="dot"></span>Settings</a></nav>
+        <div class="sidebar-panel">
+          <strong>From chaos → clarity</strong>
+          <p>Upload messy notes, screenshots, past papers, or PDFs. ReimuruABT turns them into clean, exam-ready outputs.</p>
+        </div>
+      </div>
+      <div class="sidebar-bottom">
+        <div class="mini-user">
+          <div class="avatar" data-user-initials>ST</div>
+          <div>
+            <strong data-user-name>Student</strong>
+            <span><span data-user-credits>12</span> credits left</span>
+          </div>
+        </div>
+        <a href="index.html" class="button-secondary center" data-logout>Log out</a>
+      </div>
+    </aside>
+    <main class="main-panel">
+      <header class="panel-top">
+        <div class="panel-title">
+          <h1>History</h1>
+          <p>Everything you generated lives here so the product feels like a real study workspace, not a one-off tool.</p>
+        </div>
+        <div class="panel-actions">
+          <a class="button-secondary" href="pricing.html">Top up credits</a>
+          <a class="button" href="upload.html">New analysis</a>
+        </div>
+      </header>
+      
+<div class="history-grid">
+  <section class="stack">
+    <div data-history-summary></div>
+    <section class="shell-card card">
+      <span class="section-label">Why history matters</span>
+      <h3>Reuse your work instead of re-uploading everything.</h3>
+      <p>A proper SaaS needs memory. This is the bridge from one-off AI outputs to a real study system.</p>
+    </section>
+  </section>
+  <section class="shell-card card">
+    <span class="section-label">Saved results</span>
+    <h3>Documents & outputs</h3>
+    <p>Every generated pack you keep is one less thing to rebuild later.</p>
+    <div class="history-list" data-history-list></div>
+  </section>
+</div>
+
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz / Practice Mode · ReimuruABT</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body data-page="quiz">
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div>
+        <a href="dashboard.html" class="brand-lockup">
+          <span class="brand-pill"></span>
+          <span class="brand-copy">
+            <strong>ReimuruABT</strong>
+            <span>Premium student AI</span>
+          </span>
+        </a>
+        <nav class="sidebar-nav"><a href="dashboard.html" class=""><span class="dot"></span>Dashboard</a>
+<a href="upload.html" class=""><span class="dot"></span>Upload</a>
+<a href="results.html" class=""><span class="dot"></span>Results</a>
+<a href="history.html" class=""><span class="dot"></span>History</a>
+<a href="flashcards.html" class=""><span class="dot"></span>Flashcards</a>
+<a href="quiz.html" class="active"><span class="dot"></span>Quiz</a>
+<a href="pricing.html" class=""><span class="dot"></span>Pricing</a>
+<a href="settings.html" class=""><span class="dot"></span>Settings</a></nav>
+        <div class="sidebar-panel">
+          <strong>From chaos → clarity</strong>
+          <p>Upload messy notes, screenshots, past papers, or PDFs. ReimuruABT turns them into clean, exam-ready outputs.</p>
+        </div>
+      </div>
+      <div class="sidebar-bottom">
+        <div class="mini-user">
+          <div class="avatar" data-user-initials>ST</div>
+          <div>
+            <strong data-user-name>Student</strong>
+            <span><span data-user-credits>12</span> credits left</span>
+          </div>
+        </div>
+        <a href="index.html" class="button-secondary center" data-logout>Log out</a>
+      </div>
+    </aside>
+    <main class="main-panel">
+      <header class="panel-top">
+        <div class="panel-title">
+          <h1>Quiz / Practice Mode</h1>
+          <p>Quick multiple-choice practice from your saved uploads, with instant feedback.</p>
+        </div>
+        <div class="panel-actions">
+          <a class="button-secondary" href="pricing.html">Top up credits</a>
+          <a class="button" href="upload.html">New analysis</a>
+        </div>
+      </header>
+      
+<section class="shell-card card">
+  <span class="section-label">Quiz mode</span>
+  <h3>Practice your weak spots.</h3>
+  <p>Generated from the material you’ve already uploaded. Choose an answer and the interface will mark it instantly.</p>
+  <div style="margin-top:22px;" data-quiz-page></div>
+</section>
+
+    </main>
+  </div>
+</body>
+</html>

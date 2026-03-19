@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Results · ReimuruABT</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body data-page="results">
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div>
+        <a href="dashboard.html" class="brand-lockup">
+          <span class="brand-pill"></span>
+          <span class="brand-copy">
+            <strong>ReimuruABT</strong>
+            <span>Premium student AI</span>
+          </span>
+        </a>
+        <nav class="sidebar-nav"><a href="dashboard.html" class=""><span class="dot"></span>Dashboard</a>
+<a href="upload.html" class=""><span class="dot"></span>Upload</a>
+<a href="results.html" class="active"><span class="dot"></span>Results</a>
+<a href="history.html" class=""><span class="dot"></span>History</a>
+<a href="flashcards.html" class=""><span class="dot"></span>Flashcards</a>
+<a href="quiz.html" class=""><span class="dot"></span>Quiz</a>
+<a href="pricing.html" class=""><span class="dot"></span>Pricing</a>
+<a href="settings.html" class=""><span class="dot"></span>Settings</a></nav>
+        <div class="sidebar-panel">
+          <strong>From chaos → clarity</strong>
+          <p>Upload messy notes, screenshots, past papers, or PDFs. ReimuruABT turns them into clean, exam-ready outputs.</p>
+        </div>
+      </div>
+      <div class="sidebar-bottom">
+        <div class="mini-user">
+          <div class="avatar" data-user-initials>ST</div>
+          <div>
+            <strong data-user-name>Student</strong>
+            <span><span data-user-credits>12</span> credits left</span>
+          </div>
+        </div>
+        <a href="index.html" class="button-secondary center" data-logout>Log out</a>
+      </div>
+    </aside>
+    <main class="main-panel">
+      <header class="panel-top">
+        <div class="panel-title">
+          <h1>Results</h1>
+          <p>Review the generated study pack: summary, notes, flashcards, quizzes, and exam prompts.</p>
+        </div>
+        <div class="panel-actions">
+          <a class="button-secondary" href="pricing.html">Top up credits</a>
+          <a class="button" href="upload.html">New analysis</a>
+        </div>
+      </header>
+      
+<div data-results-shell>
+  <div class="results-grid">
+    <div class="stack">
+      <section class="shell-card card">
+        <div class="result-header">
+          <div>
+            <span class="section-label">Latest result</span>
+            <h2 data-result-title>Your result appears here</h2>
+            <div class="meta-list">
+              <span class="pill" data-result-subject>General</span>
+              <span class="pill" data-result-topic>Unsorted</span>
+              <span class="pill" data-result-source>OpenAI</span>
+              <span class="pill" data-result-date>Just now</span>
+            </div>
+          </div>
+          <div class="panel-actions">
+            <a class="button-secondary" href="history.html">Open history</a>
+            <a class="button" href="upload.html">Analyze another file</a>
+          </div>
+        </div>
+        <div class="status-box error show" data-result-warning style="display:none; margin-top:18px;"></div>
+        <div style="margin-top:22px;" data-result-summary></div>
+      </section>
+
+      <section class="shell-card card">
+        <span class="section-label">Core notes</span>
+        <h3>Structured takeaways</h3>
+        <ul class="result-list" data-result-notes></ul>
+      </section>
+
+      <section class="shell-card card">
+        <span class="section-label">Exam-style prompts</span>
+        <h3>Practice what matters</h3>
+        <div class="exam-grid" data-result-exam></div>
+      </section>
+    </div>
+
+    <div class="stack">
+      <section class="shell-card card">
+        <span class="section-label">Flashcards</span>
+        <h3>Tap to flip</h3>
+        <div class="flash-grid" data-result-flashcards></div>
+      </section>
+
+      <section class="shell-card card">
+        <span class="section-label">Quiz mode</span>
+        <h3>Quick practice set</h3>
+        <div class="quiz-list" data-result-quizzes></div>
+      </section>
+    </div>
+  </div>
+</div>
+
+    </main>
+  </div>
+</body>
+</html>

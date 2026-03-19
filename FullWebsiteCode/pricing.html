@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credits & Pricing · ReimuruABT</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body data-page="pricing">
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div>
+        <a href="dashboard.html" class="brand-lockup">
+          <span class="brand-pill"></span>
+          <span class="brand-copy">
+            <strong>ReimuruABT</strong>
+            <span>Premium student AI</span>
+          </span>
+        </a>
+        <nav class="sidebar-nav"><a href="dashboard.html" class=""><span class="dot"></span>Dashboard</a>
+<a href="upload.html" class=""><span class="dot"></span>Upload</a>
+<a href="results.html" class=""><span class="dot"></span>Results</a>
+<a href="history.html" class=""><span class="dot"></span>History</a>
+<a href="flashcards.html" class=""><span class="dot"></span>Flashcards</a>
+<a href="quiz.html" class=""><span class="dot"></span>Quiz</a>
+<a href="pricing.html" class="active"><span class="dot"></span>Pricing</a>
+<a href="settings.html" class=""><span class="dot"></span>Settings</a></nav>
+        <div class="sidebar-panel">
+          <strong>From chaos → clarity</strong>
+          <p>Upload messy notes, screenshots, past papers, or PDFs. ReimuruABT turns them into clean, exam-ready outputs.</p>
+        </div>
+      </div>
+      <div class="sidebar-bottom">
+        <div class="mini-user">
+          <div class="avatar" data-user-initials>ST</div>
+          <div>
+            <strong data-user-name>Student</strong>
+            <span><span data-user-credits>12</span> credits left</span>
+          </div>
+        </div>
+        <a href="index.html" class="button-secondary center" data-logout>Log out</a>
+      </div>
+    </aside>
+    <main class="main-panel">
+      <header class="panel-top">
+        <div class="panel-title">
+          <h1>Credits & Pricing</h1>
+          <p>A clean pricing page now, ready for real Stripe products and subscription logic next.</p>
+        </div>
+        <div class="panel-actions">
+          <a class="button-secondary" href="pricing.html">Top up credits</a>
+          <a class="button" href="upload.html">New analysis</a>
+        </div>
+      </header>
+      
+<div class="grid-3">
+  <article class="pricing-card card">
+    <h3>Starter Credits</h3>
+    <div class="price"><strong>£6</strong><span>one-time</span></div>
+    <p>For students who want to test the tool without committing yet.</p>
+    <ul class="clean-list">
+      <li>10 credits</li>
+      <li>Each live AI analysis uses 1 credit</li>
+      <li>Results saved to history</li>
+    </ul>
+    <p class="pricing-note">Good for trying the workflow.</p>
+  </article>
+
+  <article class="pricing-card card featured">
+    <span class="flag">Recommended</span>
+    <h3>Core Monthly</h3>
+    <div class="price"><strong>£12</strong><span>/ month</span></div>
+    <p>For the student who will actually use this often.</p>
+    <ul class="clean-list">
+      <li>80 monthly credits</li>
+      <li>Priority-feeling workflow</li>
+      <li>Future premium tools included first</li>
+    </ul>
+    <p class="pricing-note">This is the clean middle offer.</p>
+  </article>
+
+  <article class="pricing-card card">
+    <h3>Pro</h3>
+    <div class="price"><strong>£24</strong><span>/ month</span></div>
+    <p>For high-volume usage and full study-system energy.</p>
+    <ul class="clean-list">
+      <li>High credit allowance</li>
+      <li>Expanded history and premium features</li>
+      <li>Future team / group options</li>
+    </ul>
+    <p class="pricing-note">Built for where this product is going.</p>
+  </article>
+</div>
+
+<section class="section" style="padding-bottom:0;">
+  <div class="cta-band">
+    <span class="section-label" style="color: rgba(255,255,255,0.62);">Stripe-ready next step</span>
+    <h2 style="margin:0; font-size: clamp(2rem,3vw,3rem); letter-spacing:-0.05em;">This page is designed for real billing next.</h2>
+    <p style="margin-top:14px;">The visual structure is ready. The next build step is wiring in Stripe products, checkout, webhooks, and real credit balances per user account.</p>
+  </div>
+</section>
+
+    </main>
+  </div>
+</body>
+</html>
