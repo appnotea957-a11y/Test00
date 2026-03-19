@@ -4,7 +4,8 @@
   "description": "premium full-stack student AI app rebuilt for Railway deployment",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "postinstall": "npm install"
   },
   "engines": {
     "node": ">=18"
