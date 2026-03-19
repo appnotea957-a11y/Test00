@@ -5,7 +5,6 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "postinstall": "npm install"
   },
   "engines": {
     "node": ">=18"
