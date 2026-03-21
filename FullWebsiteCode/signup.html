@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create account · ReimuruABT</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body data-page="signup">
+  <main class="auth-shell tuned-auth">
+    <section class="auth-side quieter">
+      <div data-brand-lockup></div>
+      <div class="auth-copy">
+        <span class="badge">Saved history starts here.</span>
+        <h1>Create your study workspace properly.</h1>
+        <p>Guest mode stays temporary on purpose. Once you create an account, results start saving and your plan can route through GPT.</p>
+      </div>
+      <div class="auth-benefits">
+        <article class="proof-card slim">
+          <div class="proof-icon">✦</div>
+          <div>
+            <strong>Save everything that matters</strong>
+            <p>History, flashcards, quiz sessions, and future credits all sit behind your account.</p>
+          </div>
+        </article>
+        <article class="proof-card slim">
+          <div class="proof-icon">→</div>
+          <div>
+            <strong>Free mode still exists</strong>
+            <p>You can keep using the product without signing in. Account mode is just where the work starts lasting.</p>
+          </div>
+        </article>
+      </div>
+      <div class="auth-logo refined">
+        <img src="assets/logo-wordmark.png" alt="ReimuruABT logo">
+      </div>
+    </section>
+
+    <section class="auth-card card tuned-card">
+      <span class="section-label">Sign up</span>
+      <h1>Start clean.</h1>
+      <p>Create a local prototype account in this browser now. Real auth and Google sign-in are the next step.</p>
+      <button type="button" class="button-secondary full-width" data-google-soon>Continue with Google <span class="soon-pill">Soon</span></button>
+      <div class="divider-or"><span>or</span></div>
+      <form data-auth-form>
+        <div class="field">
+          <label for="signup-name">Name</label>
+          <input id="signup-name" name="name" type="text" placeholder="Your name">
+        </div>
+        <div class="field">
+          <label for="signup-email">Email</label>
+          <input id="signup-email" name="email" type="email" placeholder="you@example.com">
+        </div>
+        <div class="field">
+          <label for="signup-password">Password</label>
+          <input id="signup-password" name="password" type="password" placeholder="At least 8 characters">
+        </div>
+        <div class="status-box" data-auth-status></div>
+        <button class="button full-width" type="submit">Create account</button>
+      </form>
+      <p class="footnote">Prototype note: for now this account is stored locally in this browser only. Real auth comes next.</p>
+      <p class="switch">Already have an account? <a href="login.html">Log in</a></p>
+    </section>
+  </main>
+</body>
+</html>

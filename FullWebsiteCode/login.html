@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log in · ReimuruABT</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body data-page="login">
+  <main class="auth-shell tuned-auth">
+    <section class="auth-side quieter">
+      <div data-brand-lockup></div>
+      <div class="auth-copy">
+        <span class="badge">Pick up where you left off.</span>
+        <h1>Log back into your saved study workspace.</h1>
+        <p>Guest mode is great for trying things. Logging in is where history, credits, and your long-term workflow start making sense.</p>
+      </div>
+      <div class="auth-benefits">
+        <article class="proof-card slim">
+          <div class="proof-icon">01</div>
+          <div>
+            <strong>Saved outputs</strong>
+            <p>Notes, flashcards, and quiz sessions stay attached to your account flow.</p>
+          </div>
+        </article>
+        <article class="proof-card slim">
+          <div class="proof-icon">02</div>
+          <div>
+            <strong>Plan-aware routing</strong>
+            <p>Starter, Standard, and Pro all move through GPT. Guest mode stays DeepSeek.</p>
+          </div>
+        </article>
+      </div>
+      <div class="auth-logo refined small-logo">
+        <img src="assets/logo-wordmark.png" alt="ReimuruABT logo">
+      </div>
+    </section>
+
+    <section class="auth-card card tuned-card">
+      <span class="section-label">Log in</span>
+      <h1>Welcome back.</h1>
+      <p>Use the local prototype account you created on this browser. Google sign-in is prepared for the next build.</p>
+      <button type="button" class="button-secondary full-width" data-google-soon>Continue with Google <span class="soon-pill">Soon</span></button>
+      <div class="divider-or"><span>or</span></div>
+      <form data-auth-form>
+        <div class="field">
+          <label for="login-email">Email</label>
+          <input id="login-email" name="email" type="email" placeholder="you@example.com">
+        </div>
+        <div class="field">
+          <label for="login-password">Password</label>
+          <input id="login-password" name="password" type="password" placeholder="Your password">
+        </div>
+        <div class="status-box" data-auth-status></div>
+        <button class="button full-width" type="submit">Log in</button>
+      </form>
+      <p class="switch">Need an account? <a href="signup.html?plan=starter">Create one</a></p>
+    </section>
+  </main>
+</body>
+</html>

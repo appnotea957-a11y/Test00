@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReimuruABT · Study smarter without the clutter</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body data-page="landing">
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div data-brand-lockup></div>
+      <nav class="topbar-nav">
+        <a href="#how">How it works</a>
+        <a href="#plans">Plans</a>
+        <a href="pricing.html">Pricing</a>
+      </nav>
+      <div class="topbar-actions">
+        <a href="login.html" class="button-ghost">Log in</a>
+        <a href="signup.html?plan=starter" class="button">Get started</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid v2-hero-grid">
+        <div class="hero-copy">
+          <span class="badge">Built for students who want serious output fast.</span>
+          <h1>Turn uploads into <span class="text-gradient">exam-ready study packs.</span></h1>
+          <p>Use ReimuruABT as a free DeepSeek-powered guest tool, or create an account for GPT plans, saved history, and a cleaner long-term study system. The product stays calm either way.</p>
+          <div class="hero-actions">
+            <a href="upload.html?guest=1" class="button">Try free</a>
+            <a href="signup.html?plan=starter" class="button-secondary">Create account</a>
+          </div>
+          <div class="hero-proof compact">
+            <div class="proof-card">
+              <div class="proof-icon">01</div>
+              <div>
+                <strong>Free mode first.</strong>
+                <p>Land on the site, upload something, and use DeepSeek instantly with zero account friction.</p>
+              </div>
+            </div>
+            <div class="proof-card">
+              <div class="proof-icon">02</div>
+              <div>
+                <strong>Saved history when you are ready.</strong>
+                <p>Create an account later and move into GPT plans, stored results, flashcards, and quiz workflows.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual tuned">
+          <div class="logo-stage cleaner">
+            <img src="assets/logo-wordmark.png" alt="ReimuruABT wordmark">
+          </div>
+          <div class="hero-surface">
+            <div class="surface-card">
+              <strong>What Reimuru produces</strong>
+              <ul class="feature-list">
+                <li>Structured revision notes that actually feel usable.</li>
+                <li>Flashcards ready for active recall.</li>
+                <li>Quiz flows with instant practice or end-of-session reveal.</li>
+              </ul>
+            </div>
+            <div class="surface-stats four-up">
+              <div class="mini-stat">
+                <strong>Guest</strong>
+                <span>DeepSeek</span>
+              </div>
+              <div class="mini-stat">
+                <strong>Starter</strong>
+                <span>GPT-5 mini</span>
+              </div>
+              <div class="mini-stat">
+                <strong>Standard</strong>
+                <span>GPT-5</span>
+              </div>
+              <div class="mini-stat">
+                <strong>Pro</strong>
+                <span>GPT-5.2</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-label">How it works</span>
+            <h2>Low friction in. Better output out.</h2>
+          </div>
+          <p>Free users can start immediately in guest mode. Paid users unlock saved history and stronger GPT tiers. Same clean interface, different depth depending on what you need.</p>
+        </div>
+        <div class="grid-3">
+          <article class="step-card card">
+            <div class="step-number">01</div>
+            <h3>Upload</h3>
+            <p>Add notes, lecture text, past-paper prompts, or rough study material that needs cleaning up.</p>
+          </article>
+          <article class="step-card card">
+            <div class="step-number">02</div>
+            <h3>Choose your path</h3>
+            <p>Use free guest mode with DeepSeek or create an account for saved history and GPT plans.</p>
+          </article>
+          <article class="step-card card">
+            <div class="step-number">03</div>
+            <h3>Revise</h3>
+            <p>Move through notes, flashcards, and the new quiz flow without the old messy-student-project energy.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="plans">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-label">Plan ladder</span>
+            <h2>Start free. Upgrade only when it matters.</h2>
+          </div>
+          <p>The free path is a genuine product, not a fake demo. The paid plans exist for better models, saved history, and heavier usage.</p>
+        </div>
+        <div class="grid-4 pricing-grid-landing">
+          <article class="pricing-card card">
+            <span class="flag subtle">No sign-in</span>
+            <h3>Free guest</h3>
+            <div class="price"><strong>£0</strong><span>/ always</span></div>
+            <p>DeepSeek-powered trial path for instant use.</p>
+            <ul class="clean-list">
+              <li>No account required</li>
+              <li>Temporary session only</li>
+              <li>No saved history</li>
+            </ul>
+            <div class="stack-actions"><a class="button-secondary full-width" href="upload.html?guest=1">Try free</a></div>
+          </article>
+          <article class="pricing-card card">
+            <h3>Starter</h3>
+            <div class="price"><strong>£6</strong><span>/ month</span></div>
+            <p>Cheapest paid entry with saved history and GPT access.</p>
+            <ul class="clean-list">
+              <li>GPT-5 mini</li>
+              <li>Saved study history</li>
+              <li>Good first paid tier</li>
+            </ul>
+            <div class="stack-actions"><a class="button-secondary full-width" href="signup.html?plan=starter">Choose Starter</a></div>
+          </article>
+          <article class="pricing-card card featured">
+            <span class="flag">Recommended</span>
+            <h3>Standard</h3>
+            <div class="price"><strong>£12</strong><span>/ month</span></div>
+            <p>The plan most students should realistically choose.</p>
+            <ul class="clean-list">
+              <li>GPT-5</li>
+              <li>Saved history + better quality</li>
+              <li>Best quality-to-price balance</li>
+            </ul>
+            <div class="stack-actions"><a class="button full-width" href="signup.html?plan=standard">Choose Standard</a></div>
+          </article>
+          <article class="pricing-card card">
+            <h3>Pro</h3>
+            <div class="price"><strong>£22</strong><span>/ month</span></div>
+            <p>For heavier usage, higher volume, and stronger reasoning.</p>
+            <ul class="clean-list">
+              <li>GPT-5.2</li>
+              <li>Largest credit pool</li>
+              <li>Best for long revision sessions</li>
+            </ul>
+            <div class="stack-actions"><a class="button-secondary full-width" href="signup.html?plan=pro">Choose Pro</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-2">
+        <article class="output-card card">
+          <div class="icon">AI</div>
+          <h3>Guest mode is real, not fake.</h3>
+          <p>People can access the website and work immediately without signing in. The catch is deliberate: no account means no saved history.</p>
+          <ul class="clean-list">
+            <li>DeepSeek handles free guest sessions.</li>
+            <li>Paid plans route through GPT.</li>
+            <li>Creating an account turns temporary work into something you can keep.</li>
+          </ul>
+        </article>
+        <article class="testimonial-card card lifted">
+          <span class="section-label">Quiz V2</span>
+          <h2>Practice now. Reveal later if you want.</h2>
+          <p>The new quiz flow supports immediate feedback in practice mode, plus a test mode where answers stay hidden until you hit reveal. When you finish one question, another can be generated right away.</p>
+          <div class="stack-actions">
+            <a class="button-secondary" href="quiz.html">See quiz mode</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta-band">
+          <span class="section-label" style="color: rgba(255,255,255,0.62);">Ready</span>
+          <h2 style="margin:0; font-size: clamp(2rem,3vw,3rem); letter-spacing:-0.05em;">Use it for free first. Upgrade when you want the serious version.</h2>
+          <p style="max-width:62ch; margin-top: 14px;">That is the whole product logic now: no-friction entry, clearer paid value, and a much better path into real SaaS.</p>
+          <div class="cta-actions">
+            <a href="upload.html?guest=1" class="button-light">Try free guest mode</a>
+            <a href="signup.html?plan=starter" class="button-outline-light">Create account</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-card">
+      <div data-brand-lockup data-compact="true"></div>
+      <p>V2 brings guest mode, plan routing, saved-history logic, and the new quiz flow foundation.</p>
+    </div>
+  </footer>
+</body>
+</html>
