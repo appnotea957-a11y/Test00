@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reimuru · Premium student AI</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body data-page="landing">
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="index.html" class="logo-lockup topbar-logo" aria-label="Reimuru home">
+        <img src="assets/logo-wordmark.png" alt="Reimuru">
+      </a>
+      <nav class="topbar-nav">
+        <a href="#how">How it works</a>
+        <a href="#outputs">Outputs</a>
+        <a href="#plans">Plans</a>
+      </nav>
+      <div class="topbar-actions">
+        <a href="login.html" class="button-ghost">Log in</a>
+        <a href="signup.html?plan=starter" class="button">Get started</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero-v4">
+      <div class="container hero-v4-shell">
+        <div class="hero-copy max-hero">
+          <span class="badge">Built for students who want serious output fast.</span>
+          <h1>Turn uploads into <span class="text-gradient">exam-ready study packs.</span></h1>
+          <p>Use Reimuru for free in guest mode, or create an account when you want saved history, cleaner exports, and GPT-powered plans. Calm on the surface. Strong under the hood.</p>
+          <div class="hero-actions">
+            <a href="upload.html?guest=1" class="button">Try free</a>
+            <a href="signup.html?plan=starter" class="button-secondary">Create account</a>
+          </div>
+          <div class="hero-proof-grid" id="outputs">
+            <article class="proof-tile glass-card">
+              <span class="section-label">Notes</span>
+              <strong>Detailed, editable notes.</strong>
+              <p>Build proper study notes first, then refine them before export.</p>
+            </article>
+            <article class="proof-tile glass-card">
+              <span class="section-label">Quiz</span>
+              <strong>Practice without messy setup.</strong>
+              <p>Run active recall quickly, then move into exam-style pressure when ready.</p>
+            </article>
+            <article class="proof-tile glass-card">
+              <span class="section-label">Exam mode</span>
+              <strong>Pressure simulation, cleaner output.</strong>
+              <p>Choose a paper style, build a usable draft, and download it when it looks right.</p>
+            </article>
+          </div>
+        </div>
+
+        <aside class="hero-showcase card">
+          <span class="section-label">Why people stick with Reimuru</span>
+          <div class="showcase-stack">
+            <article class="showcase-panel accent-panel">
+              <strong>Study Flow Mode</strong>
+              <p>Move through notes, flashcards, quiz, then exam mode in one guided run.</p>
+              <div class="mini-flow">
+                <span>Upload</span>
+                <span>Notes</span>
+                <span>Quiz</span>
+                <span>Exam</span>
+              </div>
+            </article>
+            <article class="showcase-panel">
+              <strong>Confidence insight</strong>
+              <p>See what feels strong, what needs revision, and where your next effort actually matters.</p>
+            </article>
+            <article class="showcase-panel">
+              <strong>Credit clarity</strong>
+              <p>Understand roughly how many serious study runs you have left instead of staring at random credit numbers.</p>
+            </article>
+            <article class="quote-card compact-quote" data-quote-surface>
+              <span class="section-label">Daily push</span>
+              <blockquote data-quote-text>"Well begun is half done."</blockquote>
+              <p data-quote-author>— Aristotle</p>
+            </article>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="how">
+      <div class="container">
+        <div class="section-head tighter spaced-head">
+          <div>
+            <span class="section-label">How it works</span>
+            <h2>Less friction in. Better revision out.</h2>
+            <p class="eyebrow">The full loop is built to feel fuller than a one-shot AI tool: organize, revise, test, then simulate pressure.</p>
+          </div>
+        </div>
+        <div class="grid-3 elevated-steps">
+          <article class="step-card card">
+            <div class="step-number">01</div>
+            <h3>Upload once</h3>
+            <p>Drop in notes, PDFs, screenshots, or rough study material that needs cleaning up.</p>
+          </article>
+          <article class="step-card card">
+            <div class="step-number">02</div>
+            <h3>Choose your path</h3>
+            <p>Stay free in guest mode with DeepSeek or move into saved GPT plans when the work matters enough to keep.</p>
+          </article>
+          <article class="step-card card">
+            <div class="step-number">03</div>
+            <h3>Work like a proper study system</h3>
+            <p>Move through notes, flashcards, quiz prompts, and exam mode without cluttered switching.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="selling-points">
+      <div class="container">
+        <div class="section-head tighter spaced-head">
+          <div>
+            <span class="section-label">Selling points</span>
+            <h2>Not every feature. Just the ones that actually sell.</h2>
+          </div>
+        </div>
+        <div class="selling-grid">
+          <article class="card selling-card">
+            <span class="selling-kicker">01</span>
+            <h3>Guided study flow</h3>
+            <p>Open one workspace and move from notes into active recall and exam practice without rebuilding context every time.</p>
+          </article>
+          <article class="card selling-card">
+            <span class="selling-kicker">02</span>
+            <h3>Confidence insight</h3>
+            <p>Use the dashboard to see where your saved results are building real strength and where you should focus next.</p>
+          </article>
+          <article class="card selling-card">
+            <span class="selling-kicker">03</span>
+            <h3>Editable notes + export</h3>
+            <p>Turn AI output into something you can actually tweak, save, and download cleanly for proper revision.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="plans">
+      <div class="container">
+        <div class="section-head tighter">
+          <div>
+            <span class="section-label">Plans</span>
+            <h2>Start free. Upgrade when the work matters enough to keep.</h2>
+          </div>
+        </div>
+        <div class="grid-4 pricing-grid-landing">
+          <article class="pricing-card card">
+            <span class="flag subtle">Guest</span>
+            <h3>Free</h3>
+            <div class="price"><strong>£0</strong><span>/ always</span></div>
+            <p>DeepSeek-powered entry path with watermark and no saved history.</p>
+            <ul class="clean-list">
+              <li>No sign-in required</li>
+              <li>Watermarked exports</li>
+              <li>Temporary session only</li>
+            </ul>
+            <div class="stack-actions"><a class="button-secondary full-width" href="upload.html?guest=1">Use free mode</a></div>
+          </article>
+          <article class="pricing-card card">
+            <h3>Starter</h3>
+            <div class="price"><strong>£6</strong><span>/ month</span></div>
+            <p>Saved history and GPT-5 mini for lower-cost paid study.</p>
+            <ul class="clean-list">
+              <li>Watermark-free</li>
+              <li>Saved results</li>
+              <li>Great first paid plan</li>
+            </ul>
+            <div class="stack-actions"><a class="button-secondary full-width" href="signup.html?plan=starter">Choose Starter</a></div>
+          </article>
+          <article class="pricing-card card featured">
+            <span class="flag">Recommended</span>
+            <h3>Standard</h3>
+            <div class="price"><strong>£12</strong><span>/ month</span></div>
+            <p>GPT-5 balance for everyday revision and cleaner long sessions.</p>
+            <ul class="clean-list">
+              <li>Best price/quality balance</li>
+              <li>Saved notes and exam papers</li>
+              <li>Most realistic plan for most users</li>
+            </ul>
+            <div class="stack-actions"><a class="button full-width" href="signup.html?plan=standard">Choose Standard</a></div>
+          </article>
+          <article class="pricing-card card">
+            <h3>Pro</h3>
+            <div class="price"><strong>£22</strong><span>/ month</span></div>
+            <p>GPT-5.2 for heavier prep, stronger reasoning, and bigger output runs.</p>
+            <ul class="clean-list">
+              <li>Best for intense revision</li>
+              <li>Largest credit pool</li>
+              <li>Watermark-free exports</li>
+            </ul>
+            <div class="stack-actions"><a class="button-secondary full-width" href="signup.html?plan=pro">Choose Pro</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta-band">
+          <span class="section-label" style="color: rgba(255,255,255,0.66);">Ready</span>
+          <h2 style="margin:0; font-size: clamp(2rem,3vw,3rem); letter-spacing:-0.05em;">Start free, then keep the work that deserves to stay.</h2>
+          <div class="cta-actions">
+            <a href="upload.html?guest=1" class="button-light">Try free</a>
+            <a href="signup.html?plan=starter" class="button-outline-light">Create account</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

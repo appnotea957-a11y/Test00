@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exam mode · Reimuru</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body data-page="exam">
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div>
+        <div data-brand-lockup data-compact="true"></div>
+        <nav class="sidebar-nav" data-sidebar-nav></nav>
+        <div class="sidebar-panel">
+          <strong data-user-plan>Guest mode · DeepSeek · no history</strong>
+          <p>Pick an exam style, build a paper, run the timer, and export the paper when you are done.</p>
+        </div>
+      </div>
+      <div class="sidebar-bottom">
+        <div class="mini-user">
+          <div class="avatar" data-user-initials>GU</div>
+          <div>
+            <strong data-user-name>Guest mode</strong>
+            <span data-user-credits-copy>No credits in guest mode</span>
+          </div>
+        </div>
+        <a href="index.html" class="button-secondary center" data-logout data-auth-only>Log out</a>
+        <a href="signup.html?plan=starter" class="button center" data-guest-only>Create account</a>
+      </div>
+    </aside>
+
+    <main class="main-panel">
+      <header class="panel-top">
+        <div class="panel-title">
+          <h1>Exam mode</h1>
+          <p>Choose a paper style, build a timed exam, and keep revision focused without the UI fighting you.</p>
+        </div>
+        <div class="panel-actions">
+          <a class="button-secondary" href="notes.html">Open notes</a>
+          <a class="button" href="results.html">Current result</a>
+        </div>
+      </header>
+
+      <div class="exam-grid" data-exam-root>
+        <section class="card exam-controls">
+          <span class="section-label">Paper setup</span>
+          <h3>Choose an exam style</h3>
+          <div class="style-group">
+            <strong>Most used</strong>
+            <div class="style-grid" data-exam-styles-main></div>
+          </div>
+          <div class="style-group">
+            <strong>Harder international styles</strong>
+            <div class="style-grid" data-exam-styles-extra></div>
+          </div>
+
+          <div class="coverage-block">
+            <div class="progress-meta">
+              <strong>Estimated exam time</strong>
+              <span data-exam-estimate>—</span>
+            </div>
+            <div class="progress-track subtle"><span data-exam-estimate-fill></span></div>
+            <p class="muted small">Estimated from your material size and the generated question set.</p>
+          </div>
+
+          <div class="progress-shell compact" data-exam-progress hidden>
+            <div class="progress-meta">
+              <strong data-exam-progress-label>Building exam mode…</strong>
+              <span data-exam-progress-value>0%</span>
+            </div>
+            <div class="progress-track"><span data-exam-progress-fill></span></div>
+            <p class="muted small" data-exam-progress-copy>Structuring sections and timing.</p>
+          </div>
+
+          <div class="timer-card" data-exam-timer-card title="Single click toggles count up/down. Double click toggles digital/analog.">
+            <div class="timer-mode-row">
+              <span class="pill soft-pill" data-timer-direction>Count down</span>
+              <span class="pill soft-pill" data-timer-display>Digital</span>
+            </div>
+            <div class="timer-display digital" data-exam-timer>
+              <span data-timer-digital>00:00</span>
+              <div class="analog-clock" data-timer-analog hidden>
+                <span class="hand hour"></span>
+                <span class="hand minute"></span>
+                <span class="hand second"></span>
+              </div>
+            </div>
+            <div class="stack-actions compact-actions">
+              <button class="button-secondary" type="button" data-exam-start>Start timer</button>
+              <button class="button-ghost" type="button" data-exam-pause>Pause timer</button>
+            </div>
+          </div>
+
+          <div class="stack-actions">
+            <button class="button" type="button" data-build-exam>Build exam paper</button>
+            <button class="button-secondary" type="button" data-exam-download="pdf">Save as PDF</button>
+            <button class="button-ghost" type="button" data-exam-download="txt">Download TXT</button>
+          </div>
+          <p class="status-box" data-exam-status></p>
+        </section>
+
+        <section class="card exam-paper watermark-surface" data-watermark-surface>
+          <div class="exam-paper-inner" data-exam-paper></div>
+        </section>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

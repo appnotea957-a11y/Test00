@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload & analyze · Reimuru</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body data-page="upload">
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div>
+        <div data-brand-lockup data-compact="true"></div>
+        <nav class="sidebar-nav" data-sidebar-nav></nav>
+        <div class="sidebar-panel">
+          <strong data-user-plan>Guest mode · DeepSeek · no history</strong>
+          <p>Build a fresh study pack, decide how strict the source should stay, then open notes, quiz, and exam mode from one result.</p>
+        </div>
+      </div>
+      <div class="sidebar-bottom">
+        <div class="mini-user">
+          <div class="avatar" data-user-initials>GU</div>
+          <div>
+            <strong data-user-name>Guest mode</strong>
+            <span data-user-credits-copy>No credits in guest mode</span>
+          </div>
+        </div>
+        <a href="index.html" class="button-secondary center" data-logout data-auth-only>Log out</a>
+        <a href="signup.html?plan=starter" class="button center" data-guest-only>Create account</a>
+      </div>
+    </aside>
+
+    <main class="main-panel">
+      <header class="panel-top">
+        <div class="panel-title">
+          <h1>Upload & analyze</h1>
+          <p>One upload becomes notes, flashcards, quiz prompts, and exam-style output without the old clutter.</p>
+        </div>
+        <div class="panel-actions">
+          <a class="button-secondary" href="results.html">Open current result</a>
+          <a class="button" href="notes.html">Open notes</a>
+        </div>
+      </header>
+
+      <div class="upload-grid two-column-tight">
+        <section class="card route-card">
+          <span class="section-label">Access mode</span>
+          <h3>Current route</h3>
+          <p data-upload-access>You are in free guest mode. Reimuru will use DeepSeek and keep this session temporary.</p>
+          <div class="mode-card-stack">
+            <article class="mini-detail-card">
+              <strong>Source mode</strong>
+              <p>Choose how tightly the AI should stay anchored to your uploaded material.</p>
+            </article>
+            <div class="segmented" data-source-mode-group>
+              <button type="button" class="segmented-button active" data-source-mode="strict">Use uploaded notes only</button>
+              <button type="button" class="segmented-button" data-source-mode="expanded">Allow wider AI context</button>
+            </div>
+            <article class="mini-detail-card">
+              <strong data-watermark-copy>Guest mode watermark</strong>
+              <p>Free mode keeps history temporary and applies a subtle watermark to exported notes and exam papers.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="card upload-card">
+          <span class="section-label">Upload</span>
+          <h3>Build a new study pack</h3>
+          <form data-upload-form class="upload-form">
+            <div class="dropzone" data-dropzone>
+              <div class="drop-icon">↑</div>
+              <strong>Drag and drop a file here</strong>
+              <p>PDF, TXT, notes export, or anything you want turned into a study pack.</p>
+              <button class="button-secondary" type="button" data-browse-files>Choose file</button>
+              <input data-file-input type="file" name="file" hidden>
+            </div>
+
+            <div class="file-list" data-file-list></div>
+
+            <div class="three-fields">
+              <div class="field">
+                <label for="outputType">Output focus</label>
+                <select id="outputType" name="outputType">
+                  <option value="Balanced study pack">Balanced study pack</option>
+                  <option value="Detailed notes first">Detailed notes first</option>
+                  <option value="Exam-mode first">Exam-mode first</option>
+                  <option value="Flashcards first">Flashcards first</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="difficulty">Difficulty</label>
+                <select id="difficulty" name="difficulty">
+                  <option value="GCSE">GCSE</option>
+                  <option value="A-Level">A-Level</option>
+                  <option value="University" selected>University</option>
+                  <option value="International">International</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="examStyle">Exam flavour</label>
+                <select id="examStyle" name="examStyle">
+                  <option>GCSE</option>
+                  <option>A-Level</option>
+                  <option>IB</option>
+                  <option>SAT</option>
+                  <option>OCR</option>
+                  <option>Edexcel</option>
+                  <option>Korean CSAT</option>
+                  <option>Japanese Entrance</option>
+                  <option>Chinese Gaokao</option>
+                  <option>Singapore A-Level</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="context">Extra context</label>
+              <input id="context" name="context" type="text" placeholder="Exam board, module, teacher preference, or focus area">
+            </div>
+
+            <div class="progress-shell" data-progress-shell hidden>
+              <div class="progress-meta">
+                <strong data-progress-label>Building your study pack…</strong>
+                <span data-progress-value>0%</span>
+              </div>
+              <div class="progress-track"><span data-progress-fill></span></div>
+              <p class="muted small" data-progress-copy>Reading file and planning the cleanest output.</p>
+            </div>
+
+            <p class="status-box" data-upload-status></p>
+            <div class="stack-actions">
+              <button class="button" type="submit">Analyze file</button>
+              <a class="button-ghost" href="results.html">Open current result</a>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

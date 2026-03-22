@@ -1,0 +1,19 @@
+{
+  "name": "reimuruabt-v3",
+  "version": "1.4.0",
+  "description": "Reimuru V4 with fuller landing, redesigned dashboard, daily quotes, branding cleanup, and paper-mode theme support.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "multer": "^1.4.5-lts.1",
+    "openai": "^4.104.0"
+  }
+}
