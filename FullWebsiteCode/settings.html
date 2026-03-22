@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings · ReimuruABT</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body data-page="settings">
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div>
+        <div data-brand-lockup data-compact="true"></div>
+        <nav class="sidebar-nav" data-sidebar-nav></nav>
+        <div class="sidebar-panel">
+          <strong data-user-plan>Guest mode · DeepSeek · no history</strong>
+          <p>Profile, theme, and plan controls live here once pricing moves out of the main nav for paid users.</p>
+        </div>
+      </div>
+      <div class="sidebar-bottom">
+        <div class="mini-user">
+          <div class="avatar" data-user-initials>GU</div>
+          <div>
+            <strong data-user-name>Guest mode</strong>
+            <span data-user-credits-copy>No credits in guest mode</span>
+          </div>
+        </div>
+        <a href="index.html" class="button-secondary center" data-logout data-auth-only>Log out</a>
+        <a href="signup.html?plan=starter" class="button center" data-guest-only>Create account</a>
+      </div>
+    </aside>
+
+    <main class="main-panel">
+      <header class="panel-top">
+        <div class="panel-title">
+          <h1>Settings</h1>
+          <p>Profile, theme control, and plan management in one cleaner place.</p>
+        </div>
+        <div class="panel-actions">
+          <a class="button-secondary" href="results.html">Current result</a>
+          <a class="button" href="upload.html">Analyze new file</a>
+        </div>
+      </header>
+
+      <div class="settings-grid two-col-settings">
+        <section class="settings-card card" data-settings-root>
+          <span class="section-label">Profile</span>
+          <h3>Personal settings</h3>
+          <form data-settings-form style="margin-top:20px; display:grid; gap:14px;">
+            <div class="field">
+              <label for="settings-name">Name</label>
+              <input id="settings-name" name="name" type="text" placeholder="Your name">
+            </div>
+            <div class="field">
+              <label for="settings-email">Email</label>
+              <input id="settings-email" name="email" type="email" placeholder="you@example.com">
+            </div>
+            <div class="field">
+              <label for="settings-level">Study level</label>
+              <select id="settings-level" name="studyLevel">
+                <option>GCSE</option>
+                <option>A-Level</option>
+                <option>University</option>
+                <option>International</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="settings-focus">Default focus mode</label>
+              <select id="settings-focus" name="focusMode">
+                <option>Exam mode</option>
+                <option>Notes first</option>
+                <option>Quick revision</option>
+                <option>Deep understanding</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="settings-goal">Current goal</label>
+              <textarea id="settings-goal" name="goal" placeholder="Example: turn lecture slides into clean notes for finals."></textarea>
+            </div>
+            <button class="button" type="submit">Save settings</button>
+            <p class="muted small" data-settings-status></p>
+          </form>
+        </section>
+
+        <section class="settings-card card">
+          <span class="section-label">Workspace theme</span>
+          <h3>Color controls</h3>
+          <p class="muted">Change accent, text, and page color — then hit Home whenever you want the original Reimuru look back.</p>
+          <form data-theme-form class="theme-form-grid">
+            <label class="color-control">
+              <span>Accent</span>
+              <input type="color" name="accent">
+            </label>
+            <label class="color-control">
+              <span>Text</span>
+              <input type="color" name="text">
+            </label>
+            <label class="color-control">
+              <span>Page</span>
+              <input type="color" name="bg">
+            </label>
+            <label class="color-control">
+              <span>Cards</span>
+              <input type="color" name="card">
+            </label>
+            <div class="theme-presets">
+              <button type="button" class="preset-chip" data-theme-preset="default">Home</button>
+              <button type="button" class="preset-chip" data-theme-preset="lavender">Lavender</button>
+              <button type="button" class="preset-chip" data-theme-preset="slate">Slate</button>
+              <button type="button" class="preset-chip" data-theme-preset="cream">Cream</button>
+            </div>
+            <div class="stack-actions">
+              <button class="button-secondary" type="submit">Apply theme</button>
+              <button class="button-ghost" type="button" data-theme-reset>Home reset</button>
+            </div>
+          </form>
+          <p class="muted small" data-theme-status></p>
+        </section>
+
+        <section class="settings-card card" data-billing-root>
+          <span class="section-label">Plan & billing</span>
+          <h3>Manage plan</h3>
+          <p class="muted">Free users still see Pricing in the main nav. Paid users manage plan details from here instead.</p>
+        </section>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

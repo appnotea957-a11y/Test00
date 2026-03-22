@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing · ReimuruABT</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body data-page="pricing">
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div>
+        <div data-brand-lockup data-compact="true"></div>
+        <nav class="sidebar-nav" data-sidebar-nav></nav>
+        <div class="sidebar-panel">
+          <strong data-user-plan>Guest mode · DeepSeek · no history</strong>
+          <p>Free stays visible up front. Paid users manage billing from Settings after they upgrade.</p>
+        </div>
+      </div>
+      <div class="sidebar-bottom">
+        <div class="mini-user">
+          <div class="avatar" data-user-initials>GU</div>
+          <div>
+            <strong data-user-name>Guest mode</strong>
+            <span data-user-credits-copy>No credits in guest mode</span>
+          </div>
+        </div>
+        <a href="index.html" class="button-secondary center" data-logout data-auth-only>Log out</a>
+        <a href="signup.html?plan=starter" class="button center" data-guest-only>Create account</a>
+      </div>
+    </aside>
+
+    <main class="main-panel">
+      <header class="panel-top">
+        <div class="panel-title">
+          <h1>Pricing</h1>
+          <p>Start free with DeepSeek. Move into GPT plans when you want saved history, cleaner exports, and stronger long-form output.</p>
+        </div>
+        <div class="panel-actions">
+          <span class="pill strong-pill" data-current-plan-pill>Guest mode</span>
+          <a class="button" href="upload.html">Analyze now</a>
+        </div>
+      </header>
+      <div class="grid-4 pricing-grid-landing">
+        <article class="pricing-card card">
+          <span class="flag subtle">Guest</span>
+          <h3>Free</h3>
+          <div class="price"><strong>£0</strong><span>/ always</span></div>
+          <p>DeepSeek-powered guest mode.</p>
+          <ul class="clean-list">
+            <li>No login required</li>
+            <li>Subtle watermark</li>
+            <li>No persistent history</li>
+          </ul>
+          <div class="stack-actions"><button class="button-secondary full-width" type="button" data-plan-select="free">Use free mode</button></div>
+        </article>
+        <article class="pricing-card card">
+          <h3>Starter</h3>
+          <div class="price"><strong>£6</strong><span>/ month</span></div>
+          <p>Saved history with GPT-5 mini.</p>
+          <ul class="clean-list">
+            <li>25 credits</li>
+            <li>No watermark</li>
+            <li>Plan management in Settings</li>
+          </ul>
+          <div class="stack-actions"><button class="button-secondary full-width" type="button" data-plan-select="starter">Choose Starter</button></div>
+        </article>
+        <article class="pricing-card card featured">
+          <span class="flag">Recommended</span>
+          <h3>Standard</h3>
+          <div class="price"><strong>£12</strong><span>/ month</span></div>
+          <p>Balanced GPT-5 everyday plan.</p>
+          <ul class="clean-list">
+            <li>120 credits</li>
+            <li>Watermark-free exports</li>
+            <li>Best day-to-day choice</li>
+          </ul>
+          <div class="stack-actions"><button class="button full-width" type="button" data-plan-select="standard">Choose Standard</button></div>
+        </article>
+        <article class="pricing-card card">
+          <h3>Pro</h3>
+          <div class="price"><strong>£22</strong><span>/ month</span></div>
+          <p>GPT-5.2 for heavier exam prep.</p>
+          <ul class="clean-list">
+            <li>400 credits</li>
+            <li>Deepest reasoning tier</li>
+            <li>Watermark-free exports</li>
+          </ul>
+          <div class="stack-actions"><button class="button-secondary full-width" type="button" data-plan-select="pro">Choose Pro</button></div>
+        </article>
+      </div>
+      <p class="muted small" data-pricing-status style="margin-top: 18px;"></p>
+    </main>
+  </div>
+</body>
+</html>

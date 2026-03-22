@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReimuruABT · Premium student AI</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body data-page="landing">
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="index.html" class="simple-brand">
+        <strong>ReimuruABT</strong>
+        <span>Premium student AI</span>
+      </a>
+      <nav class="topbar-nav">
+        <a href="#how">How it works</a>
+        <a href="#outputs">Outputs</a>
+        <a href="#plans">Plans</a>
+      </nav>
+      <div class="topbar-actions">
+        <a href="login.html" class="button-ghost">Log in</a>
+        <a href="signup.html?plan=starter" class="button">Get started</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero-clean">
+      <div class="container hero-clean-shell">
+        <div class="hero-copy max-hero">
+          <span class="badge">Built for students who want serious output fast.</span>
+          <h1>Turn uploads into <span class="text-gradient">exam-ready study packs.</span></h1>
+          <p>Use ReimuruABT for free in guest mode, or create an account when you want saved history, cleaner exports, and GPT-powered plans. The interface stays calm either way.</p>
+          <div class="hero-actions">
+            <a href="upload.html?guest=1" class="button">Try free</a>
+            <a href="signup.html?plan=starter" class="button-secondary">Create account</a>
+          </div>
+        </div>
+
+        <div class="feature-ribbon" id="outputs">
+          <article class="quick-link">
+            <strong>Notes</strong>
+            <span>Detailed study notes, editable and export-ready.</span>
+          </article>
+          <article class="quick-link">
+            <strong>Flashcards</strong>
+            <span>Tap through active recall without the mess.</span>
+          </article>
+          <article class="quick-link">
+            <strong>Quiz</strong>
+            <span>Practice mode or reveal-everything test mode.</span>
+          </article>
+          <article class="quick-link">
+            <strong>Exam mode</strong>
+            <span>Choose a style, simulate pressure, and download it cleanly.</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="how">
+      <div class="container">
+        <div class="section-head tighter">
+          <div>
+            <span class="section-label">How it works</span>
+            <h2>Less friction in. Better revision out.</h2>
+          </div>
+        </div>
+        <div class="grid-3">
+          <article class="step-card card">
+            <div class="step-number">01</div>
+            <h3>Upload</h3>
+            <p>Drop in notes, PDFs, screenshots, or rough study material that needs cleaning up.</p>
+          </article>
+          <article class="step-card card">
+            <div class="step-number">02</div>
+            <h3>Choose your path</h3>
+            <p>Stay free in guest mode with DeepSeek or create an account for GPT plans and saved work.</p>
+          </article>
+          <article class="step-card card">
+            <div class="step-number">03</div>
+            <h3>Study properly</h3>
+            <p>Move through notes, flashcards, quizzes, and exam simulation without clutter.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="plans">
+      <div class="container">
+        <div class="section-head tighter">
+          <div>
+            <span class="section-label">Plans</span>
+            <h2>Start free. Upgrade when the work matters enough to keep.</h2>
+          </div>
+        </div>
+        <div class="grid-4 pricing-grid-landing">
+          <article class="pricing-card card">
+            <span class="flag subtle">Guest</span>
+            <h3>Free</h3>
+            <div class="price"><strong>£0</strong><span>/ always</span></div>
+            <p>DeepSeek-powered entry path with watermark and no saved history.</p>
+            <ul class="clean-list">
+              <li>No sign-in required</li>
+              <li>Watermarked exports</li>
+              <li>Temporary session only</li>
+            </ul>
+            <div class="stack-actions"><a class="button-secondary full-width" href="upload.html?guest=1">Use free mode</a></div>
+          </article>
+          <article class="pricing-card card">
+            <h3>Starter</h3>
+            <div class="price"><strong>£6</strong><span>/ month</span></div>
+            <p>Saved history and GPT-5 mini for lower-cost paid study.</p>
+            <ul class="clean-list">
+              <li>Watermark-free</li>
+              <li>Saved results</li>
+              <li>Great first paid plan</li>
+            </ul>
+            <div class="stack-actions"><a class="button-secondary full-width" href="signup.html?plan=starter">Choose Starter</a></div>
+          </article>
+          <article class="pricing-card card featured">
+            <span class="flag">Recommended</span>
+            <h3>Standard</h3>
+            <div class="price"><strong>£12</strong><span>/ month</span></div>
+            <p>GPT-5 balance for everyday revision and cleaner long sessions.</p>
+            <ul class="clean-list">
+              <li>Best price/quality balance</li>
+              <li>Saved notes and exam papers</li>
+              <li>Most realistic plan for most users</li>
+            </ul>
+            <div class="stack-actions"><a class="button full-width" href="signup.html?plan=standard">Choose Standard</a></div>
+          </article>
+          <article class="pricing-card card">
+            <h3>Pro</h3>
+            <div class="price"><strong>£22</strong><span>/ month</span></div>
+            <p>GPT-5.2 for heavier prep, stronger reasoning, and bigger output runs.</p>
+            <ul class="clean-list">
+              <li>Best for intense revision</li>
+              <li>Largest credit pool</li>
+              <li>Watermark-free exports</li>
+            </ul>
+            <div class="stack-actions"><a class="button-secondary full-width" href="signup.html?plan=pro">Choose Pro</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta-band">
+          <span class="section-label" style="color: rgba(255,255,255,0.66);">Ready</span>
+          <h2 style="margin:0; font-size: clamp(2rem,3vw,3rem); letter-spacing:-0.05em;">Free to try first. Strong enough to keep using after that.</h2>
+          <div class="cta-actions">
+            <a href="upload.html?guest=1" class="button-light">Try free</a>
+            <a href="signup.html?plan=starter" class="button-outline-light">Create account</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

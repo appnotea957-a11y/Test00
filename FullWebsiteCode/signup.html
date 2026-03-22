@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create account · ReimuruABT</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body data-page="signup">
+  <main class="auth-shell clean-auth">
+    <section class="auth-side">
+      <a href="index.html" class="simple-brand auth-brand">
+        <strong>ReimuruABT</strong>
+        <span>Premium student AI</span>
+      </a>
+      <span class="badge">Saved history starts here.</span>
+      <h1>Create your study workspace properly.</h1>
+      <p>Guest mode stays temporary on purpose. Once you create an account, results start saving and your plan can route through GPT.</p>
+      <div class="auth-proof-list">
+        <article class="proof-row">
+          <strong>Save everything that matters</strong>
+          <span>History, flashcards, quiz sessions, and future credits all sit behind your account.</span>
+        </article>
+        <article class="proof-row">
+          <strong>Free mode still exists</strong>
+          <span>You can keep using the product without signing in. Account mode is just where the work starts lasting.</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="auth-card-wrap">
+      <div class="auth-form-card card">
+        <span class="section-label">Sign up</span>
+        <h2>Start clean.</h2>
+        <p>Create your account and keep the work you actually want to return to.</p>
+        <form data-auth-form class="auth-form-stack">
+          <button class="button-secondary full-width" type="button" data-google-soon>Continue with Google <span class="soon-tag">Soon</span></button>
+          <div class="divider"><span>or</span></div>
+          <div class="field">
+            <label for="signup-name">Name</label>
+            <input id="signup-name" name="name" type="text" placeholder="Your name">
+          </div>
+          <div class="field">
+            <label for="signup-email">Email</label>
+            <input id="signup-email" name="email" type="email" placeholder="you@example.com">
+          </div>
+          <div class="field">
+            <label for="signup-password">Password</label>
+            <input id="signup-password" name="password" type="password" placeholder="At least 8 characters">
+          </div>
+          <p class="status-box" data-auth-status></p>
+          <button class="button full-width" type="submit">Create account</button>
+        </form>
+        <p class="muted small">Already have an account? <a href="login.html" class="inline-link">Log in</a></p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

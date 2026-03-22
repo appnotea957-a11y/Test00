@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes · ReimuruABT</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body data-page="notes">
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div>
+        <div data-brand-lockup data-compact="true"></div>
+        <nav class="sidebar-nav" data-sidebar-nav></nav>
+        <div class="sidebar-panel">
+          <strong data-user-plan>Guest mode · DeepSeek · no history</strong>
+          <p>Detailed notes live here. Edit them, refine them, and export them cleanly when you are done.</p>
+        </div>
+      </div>
+      <div class="sidebar-bottom">
+        <div class="mini-user">
+          <div class="avatar" data-user-initials>GU</div>
+          <div>
+            <strong data-user-name>Guest mode</strong>
+            <span data-user-credits-copy>No credits in guest mode</span>
+          </div>
+        </div>
+        <a href="index.html" class="button-secondary center" data-logout data-auth-only>Log out</a>
+        <a href="signup.html?plan=starter" class="button center" data-guest-only>Create account</a>
+      </div>
+    </aside>
+
+    <main class="main-panel">
+      <header class="panel-top">
+        <div class="panel-title">
+          <h1>Notes</h1>
+          <p>Detailed notes only. Edit the document, switch source mode, and export it cleanly when you are ready.</p>
+        </div>
+        <div class="panel-actions">
+          <a class="button-secondary" href="results.html">Back to result</a>
+          <a class="button" href="exam.html">Open exam mode</a>
+        </div>
+      </header>
+
+      <div class="notes-layout" data-notes-root>
+        <section class="card notes-meta-card">
+          <span class="section-label">Document</span>
+          <h3 data-notes-title>Current notes</h3>
+          <div class="segmented compact" data-notes-source-group>
+            <button type="button" class="segmented-button active" data-notes-source="strict">Use uploaded notes only</button>
+            <button type="button" class="segmented-button" data-notes-source="expanded">Allow wider AI context</button>
+          </div>
+          <div class="coverage-block">
+            <div class="progress-meta">
+              <strong>Source reliance</strong>
+              <span data-notes-coverage-label>96%</span>
+            </div>
+            <div class="progress-track subtle"><span data-notes-coverage-fill></span></div>
+            <p class="muted small" data-notes-coverage-copy>Mostly anchored to the uploaded material.</p>
+          </div>
+
+          <div class="progress-shell compact" data-notes-progress hidden>
+            <div class="progress-meta">
+              <strong data-notes-progress-label>Refreshing notes…</strong>
+              <span data-notes-progress-value>0%</span>
+            </div>
+            <div class="progress-track"><span data-notes-progress-fill></span></div>
+            <p class="muted small" data-notes-progress-copy>Planning a cleaner notes document.</p>
+          </div>
+
+          <div class="stack-actions">
+            <button class="button" type="button" data-notes-regenerate>Refresh notes</button>
+            <button class="button-secondary" type="button" data-notes-save>Save edits</button>
+          </div>
+
+          <div class="stack-actions">
+            <button class="button-ghost" type="button" data-notes-download="txt">Download TXT</button>
+            <button class="button-ghost" type="button" data-notes-download="html">Download DOC</button>
+            <button class="button-ghost" type="button" data-notes-download="pdf">Save as PDF</button>
+          </div>
+          <p class="status-box" data-notes-status></p>
+        </section>
+
+        <section class="card notes-editor-card watermark-surface" data-watermark-surface>
+          <div class="editor-toolbar">
+            <button type="button" data-editor-command="bold"><strong>B</strong></button>
+            <button type="button" data-editor-command="italic"><em>I</em></button>
+            <button type="button" data-editor-command="formatBlock" data-editor-value="h2">H2</button>
+            <button type="button" data-editor-command="formatBlock" data-editor-value="h3">H3</button>
+            <button type="button" data-editor-command="insertUnorderedList">• List</button>
+            <button type="button" data-editor-command="insertOrderedList">1. List</button>
+            <button type="button" data-editor-command="hiliteColor" data-editor-value="rgba(79,140,255,0.18)">Highlight</button>
+          </div>
+          <div class="notes-editor" contenteditable="true" data-notes-editor spellcheck="true"></div>
+        </section>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

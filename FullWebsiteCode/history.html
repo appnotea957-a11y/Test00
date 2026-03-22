@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>History · ReimuruABT</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body data-page="history">
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div>
+        <div data-brand-lockup data-compact="true"></div>
+        <nav class="sidebar-nav" data-sidebar-nav></nav>
+        <div class="sidebar-panel">
+          <strong data-user-plan>Guest mode · DeepSeek · no history</strong>
+          <p>History is where saved work lives once you move beyond guest mode.</p>
+        </div>
+      </div>
+      <div class="sidebar-bottom">
+        <div class="mini-user">
+          <div class="avatar" data-user-initials>GU</div>
+          <div>
+            <strong data-user-name>Guest mode</strong>
+            <span data-user-credits-copy>No credits in guest mode</span>
+          </div>
+        </div>
+        <a href="index.html" class="button-secondary center" data-logout data-auth-only>Log out</a>
+        <a href="signup.html?plan=starter" class="button center" data-guest-only>Create account</a>
+      </div>
+    </aside>
+
+    <main class="main-panel">
+      <header class="panel-top">
+        <div class="panel-title">
+          <h1>History</h1>
+          <p>Reopen old study packs, delete what you do not need, and keep the cleanest versions of your work.</p>
+        </div>
+        <div class="panel-actions">
+          <a class="button" href="upload.html">Analyze new file</a>
+        </div>
+      </header>
+      <div class="history-grid" data-history-root></div>
+    </main>
+  </div>
+</body>
+</html>
